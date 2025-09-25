@@ -1,0 +1,15 @@
+{
+    "name": "fahdshaykh/phpmvc-framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "fahd shaykh",
+            "email": "fahdshaykh@outlook.com"
+        }
+    ],
+    "require": {}
+}
