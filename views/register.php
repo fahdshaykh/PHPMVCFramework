@@ -3,7 +3,11 @@
 <form action="" method="post">
     <div class="mb-3">
         <label for="firstname" class="form-label">firstname</label>
-        <input type="text" name="firstname" class="form-control" id="subject" aria-describedby="emailHelp">
+        <input type="text" name="firstname" value="<?php echo ($model->firstname) ?? ''; ?>" 
+                class="form-control <?php echo $model->hasError('firstname') ? 'is-invalid' : '' ?>" id="subject" aria-describedby="emailHelp">
+        <div class="invalid-feedback">
+            <?php echo $model->getFirstError('firstname'); ?>
+        </div>
     </div>
     <div class="mb-3">
         <label for="lastname" class="form-label">lastname</label>
