@@ -80,4 +80,9 @@ class Database {
         echo '[' . date('Y-m-d H:m:s'). '] -'. $message . PHP_EOL;
     }
 
+    public static function prepare($sql)
+    {
+        return Application::$app->db->pdo->prepare($sql);
+    }
+
 }
